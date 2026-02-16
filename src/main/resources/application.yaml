@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: api-cupom
+
+  datasource:
+    url: jdbc:h2:mem:cupomdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
